@@ -144,10 +144,15 @@ public class nameview extends javax.swing.JFrame {
 
     private void hal_selanjutnyaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_hal_selanjutnyaActionPerformed
         // TODO add your handling code here:
+        if (nama_user.getText().equals("")){
+            JOptionPane.showMessageDialog(null, "ISI DONG NAMANYAA!!!", "PUNTEN SLURRR", JOptionPane.ERROR_MESSAGE);
+        }else
+        {
             levelview lv = new levelview();
             lv.setLocationRelativeTo(null);
             lv.setVisible(true);
             this.setVisible(false);
+        }
     }//GEN-LAST:event_hal_selanjutnyaActionPerformed
 
     private void muncul_namaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_muncul_namaActionPerformed
