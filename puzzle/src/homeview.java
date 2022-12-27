@@ -36,13 +36,14 @@ public class homeview extends javax.swing.JFrame {
         jPanel1.setMaximumSize(new java.awt.Dimension(587, 346));
 
         jLabel1.setBackground(new java.awt.Color(255, 0, 51));
-        jLabel1.setFont(new java.awt.Font("Ink Free", 1, 48)); // NOI18N
+        jLabel1.setFont(new java.awt.Font("Comic Sans MS", 1, 36)); // NOI18N
         jLabel1.setForeground(new java.awt.Color(51, 51, 0));
-        jLabel1.setText("  CS Puzzle");
-        jLabel1.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.LOWERED, new java.awt.Color(102, 102, 0), new java.awt.Color(51, 51, 0), new java.awt.Color(153, 204, 0), new java.awt.Color(153, 153, 0)));
+        jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel1.setText("CS Puzzle");
+        jLabel1.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED, new java.awt.Color(102, 102, 0), new java.awt.Color(51, 51, 0), null, new java.awt.Color(153, 153, 0)));
 
         playbtn.setBackground(new java.awt.Color(102, 102, 0));
-        playbtn.setFont(new java.awt.Font("Showcard Gothic", 0, 18)); // NOI18N
+        playbtn.setFont(new java.awt.Font("Comic Sans MS", 1, 24)); // NOI18N
         playbtn.setForeground(new java.awt.Color(255, 255, 255));
         playbtn.setText("PLAY");
         playbtn.addActionListener(new java.awt.event.ActionListener() {
@@ -56,22 +57,23 @@ public class homeview extends javax.swing.JFrame {
         jPanel1Layout.setHorizontalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
-                .addGap(218, 218, 218)
-                .addComponent(playbtn, javax.swing.GroupLayout.PREFERRED_SIZE, 138, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                .addContainerGap(160, Short.MAX_VALUE)
-                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 264, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(155, 155, 155))
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addGap(154, 154, 154)
+                        .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 255, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addGap(213, 213, 213)
+                        .addComponent(playbtn, javax.swing.GroupLayout.PREFERRED_SIZE, 138, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addContainerGap(170, Short.MAX_VALUE))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
-                .addGap(51, 51, 51)
+                .addGap(61, 61, 61)
                 .addComponent(jLabel1)
-                .addGap(60, 60, 60)
+                .addGap(53, 53, 53)
                 .addComponent(playbtn, javax.swing.GroupLayout.PREFERRED_SIZE, 47, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(116, Short.MAX_VALUE))
+                .addContainerGap(120, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
