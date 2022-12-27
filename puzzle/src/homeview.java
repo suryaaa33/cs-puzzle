@@ -90,7 +90,10 @@ public class homeview extends javax.swing.JFrame {
 
     private void playbtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_playbtnActionPerformed
         // TODO add your handling code here:
-        new nameview().setVisible(true);
+            nameview nv = new nameview();
+            nv.setLocationRelativeTo(null);
+            nv.setVisible(true);
+            this.setVisible(false);
     }//GEN-LAST:event_playbtnActionPerformed
 
     /**
