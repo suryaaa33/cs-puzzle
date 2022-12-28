@@ -249,4 +249,8 @@ public class opsieasy extends javax.swing.JFrame {
     public javax.swing.JButton tombolmario;
     public javax.swing.JButton tombolradi;
     // End of variables declaration//GEN-END:variables
+
+    void setLocationRelativeTo(Object object) {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
 }

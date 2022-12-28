@@ -88,7 +88,7 @@ class MyButton extends JButton {
     }
 }
 
-public class yahyahard extends JFrame{
+public class abbashard extends JFrame{
 
     private JPanel panel;
     private BufferedImage source;
@@ -103,7 +103,7 @@ public class yahyahard extends JFrame{
     private final int NUMBER_OF_BUTTONS = 64;
     private final int DESIRED_WIDTH = 800;
 
-    public yahyahard() {
+    public abbashard() {
 
         initUI();
     }
@@ -190,7 +190,7 @@ public class yahyahard extends JFrame{
                     BufferedImage.TYPE_INT_ARGB);
 
         } catch (IOException ex) {
-            Logger.getLogger(yahyahard.class.getName()).log(
+            Logger.getLogger(abbashard.class.getName()).log(
                     Level.SEVERE, null, ex);
         }
 
@@ -249,7 +249,7 @@ public class yahyahard extends JFrame{
 
     private BufferedImage loadImage() throws IOException {
 
-        BufferedImage bimg = ImageIO.read(new File("src/gambarpuzzle/mamangpuzzle.jpeg"));
+        BufferedImage bimg = ImageIO.read(new File("src/gambarpuzzle/abbaspuzzle.jpeg"));
 
         return bimg;
     }
@@ -329,13 +329,9 @@ public class yahyahard extends JFrame{
     
     public static void main(String[] args) {
 
-        EventQueue.invokeLater(new Runnable() {
-
-            @Override
-            public void run() {
-                yahyahard puzzle = new yahyahard();
-                puzzle.setVisible(true);
-            }
+        EventQueue.invokeLater(() -> {
+            abbashard puzzle = new abbashard();
+            puzzle.setVisible(true);
         });
     }
 
