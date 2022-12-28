@@ -165,9 +165,9 @@ public class opsieasy extends javax.swing.JFrame {
 
     private void tombolradiActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_tombolradiActionPerformed
         // TODO add your handling code here:
-            radieasy nv = new radieasy();
-            nv.setLocationRelativeTo(null);
-            nv.setVisible(true);
+            radieasy re = new radieasy();
+            re.setLocationRelativeTo(null);
+            re.setVisible(true);
             this.setVisible(false);
         
     }//GEN-LAST:event_tombolradiActionPerformed
@@ -182,18 +182,18 @@ public class opsieasy extends javax.swing.JFrame {
 
     private void tombolmarioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_tombolmarioActionPerformed
         // TODO add your handling code here: 
-            marioeasy nv = new marioeasy();
-            nv.setLocationRelativeTo(null);
-            nv.setVisible(true);
+            marioeasy me = new marioeasy();
+            me.setLocationRelativeTo(null);
+            me.setVisible(true);
             this.setVisible(false);
         
     }//GEN-LAST:event_tombolmarioActionPerformed
 
     private void tombolkinanActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_tombolkinanActionPerformed
         // TODO add your handling code here:
-            kinaneasy nv = new kinaneasy();
-            nv.setLocationRelativeTo(null);
-            nv.setVisible(true);
+            kinaneasy ke = new kinaneasy();
+            ke.setLocationRelativeTo(null);
+            ke.setVisible(true);
             this.setVisible(false);
         
     }//GEN-LAST:event_tombolkinanActionPerformed
