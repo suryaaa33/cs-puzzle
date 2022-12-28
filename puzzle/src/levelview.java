@@ -27,8 +27,8 @@ public class levelview extends javax.swing.JFrame {
 
         jPanel2 = new javax.swing.JPanel();
         easybtn = new javax.swing.JButton();
-        jButton2 = new javax.swing.JButton();
-        jButton3 = new javax.swing.JButton();
+        normalbtn = new javax.swing.JButton();
+        hardbtn = new javax.swing.JButton();
         jLabel1 = new javax.swing.JLabel();
         filler1 = new javax.swing.Box.Filler(new java.awt.Dimension(0, 0), new java.awt.Dimension(0, 0), new java.awt.Dimension(0, 0));
 
@@ -48,17 +48,27 @@ public class levelview extends javax.swing.JFrame {
             }
         });
 
-        jButton2.setBackground(new java.awt.Color(102, 102, 0));
-        jButton2.setFont(new java.awt.Font("Comic Sans MS", 1, 24)); // NOI18N
-        jButton2.setForeground(new java.awt.Color(255, 255, 255));
-        jButton2.setText("NORMAL");
-        jButton2.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED, new java.awt.Color(153, 153, 0), new java.awt.Color(153, 153, 0), java.awt.Color.black, java.awt.Color.black));
+        normalbtn.setBackground(new java.awt.Color(102, 102, 0));
+        normalbtn.setFont(new java.awt.Font("Comic Sans MS", 1, 24)); // NOI18N
+        normalbtn.setForeground(new java.awt.Color(255, 255, 255));
+        normalbtn.setText("NORMAL");
+        normalbtn.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED, new java.awt.Color(153, 153, 0), new java.awt.Color(153, 153, 0), java.awt.Color.black, java.awt.Color.black));
+        normalbtn.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                normalbtnActionPerformed(evt);
+            }
+        });
 
-        jButton3.setBackground(new java.awt.Color(51, 51, 0));
-        jButton3.setFont(new java.awt.Font("Comic Sans MS", 1, 24)); // NOI18N
-        jButton3.setForeground(new java.awt.Color(255, 255, 255));
-        jButton3.setText("HARD");
-        jButton3.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED, new java.awt.Color(153, 153, 0), new java.awt.Color(153, 153, 0), java.awt.Color.black, java.awt.Color.black));
+        hardbtn.setBackground(new java.awt.Color(51, 51, 0));
+        hardbtn.setFont(new java.awt.Font("Comic Sans MS", 1, 24)); // NOI18N
+        hardbtn.setForeground(new java.awt.Color(255, 255, 255));
+        hardbtn.setText("HARD");
+        hardbtn.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED, new java.awt.Color(153, 153, 0), new java.awt.Color(153, 153, 0), java.awt.Color.black, java.awt.Color.black));
+        hardbtn.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                hardbtnActionPerformed(evt);
+            }
+        });
 
         jLabel1.setFont(new java.awt.Font("Comic Sans MS", 1, 36)); // NOI18N
         jLabel1.setForeground(new java.awt.Color(51, 51, 0));
@@ -72,8 +82,8 @@ public class levelview extends javax.swing.JFrame {
             .addGroup(jPanel2Layout.createSequentialGroup()
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                    .addComponent(jButton3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(jButton2, javax.swing.GroupLayout.DEFAULT_SIZE, 142, Short.MAX_VALUE)
+                    .addComponent(hardbtn, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(normalbtn, javax.swing.GroupLayout.DEFAULT_SIZE, 142, Short.MAX_VALUE)
                     .addComponent(easybtn, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addGap(135, 135, 135)
                 .addComponent(filler1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -91,9 +101,9 @@ public class levelview extends javax.swing.JFrame {
                 .addGap(18, 18, 18)
                 .addComponent(easybtn)
                 .addGap(30, 30, 30)
-                .addComponent(jButton2)
+                .addComponent(normalbtn)
                 .addGap(33, 33, 33)
-                .addComponent(jButton3)
+                .addComponent(hardbtn)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
                 .addContainerGap(268, Short.MAX_VALUE)
@@ -117,11 +127,27 @@ public class levelview extends javax.swing.JFrame {
 
     private void easybtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_easybtnActionPerformed
         // TODO add your handling code here:
-        opsieasy oe = new opsieasy();
+            opsieasy oe = new opsieasy();
             oe.setLocationRelativeTo(null);
             oe.setVisible(true);
             this.setVisible(false);
     }//GEN-LAST:event_easybtnActionPerformed
+
+    private void normalbtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_normalbtnActionPerformed
+        // TODO add your handling code here:
+            opsimedium om = new opsimedium();
+            om.setLocationRelativeTo(null);
+            om.setVisible(true);
+            this.setVisible(false);
+    }//GEN-LAST:event_normalbtnActionPerformed
+
+    private void hardbtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_hardbtnActionPerformed
+        // TODO add your handling code here:
+            opsihard oh = new opsihard();
+            oh.setLocationRelativeTo(null);
+            oh.setVisible(true);
+            this.setVisible(false);
+    }//GEN-LAST:event_hardbtnActionPerformed
 
     /**
      * @param args the command line arguments
@@ -161,9 +187,9 @@ public class levelview extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton easybtn;
     private javax.swing.Box.Filler filler1;
-    private javax.swing.JButton jButton2;
-    private javax.swing.JButton jButton3;
+    private javax.swing.JButton hardbtn;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JPanel jPanel2;
+    private javax.swing.JButton normalbtn;
     // End of variables declaration//GEN-END:variables
 }
