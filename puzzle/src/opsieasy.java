@@ -240,8 +240,8 @@ public class opsieasy extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JPanel jPanel1;
-    private javax.swing.JButton tombolkinan;
-    private javax.swing.JButton tombolmario;
-    private javax.swing.JButton tombolradi;
+    public javax.swing.JButton tombolkinan;
+    public javax.swing.JButton tombolmario;
+    public javax.swing.JButton tombolradi;
     // End of variables declaration//GEN-END:variables
 }

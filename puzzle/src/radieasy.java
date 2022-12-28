@@ -273,13 +273,9 @@ public class radieasy extends JFrame{
     
     public static void main(String[] args) {
 
-        EventQueue.invokeLater(new Runnable() {
-
-            @Override
-            public void run() {
-                radieasy puzzle = new radieasy();
-                puzzle.setVisible(true);
-            }
+        EventQueue.invokeLater(() -> {
+            radieasy puzzle = new radieasy();
+            puzzle.setVisible(true);
         });
     }
 

@@ -274,13 +274,9 @@ public class marioeasy extends JFrame{
     
     public static void main(String[] args) {
 
-        EventQueue.invokeLater(new Runnable() {
-
-            @Override
-            public void run() {
-                marioeasy puzzle = new marioeasy();
-                puzzle.setVisible(true);
-            }
+        EventQueue.invokeLater(() -> {
+            marioeasy puzzle = new marioeasy();
+            puzzle.setVisible(true);
         });
     }
 

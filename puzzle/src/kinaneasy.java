@@ -273,13 +273,9 @@ public class kinaneasy extends JFrame{
     
     public static void main(String[] args) {
 
-        EventQueue.invokeLater(new Runnable() {
-
-            @Override
-            public void run() {
-                kinaneasy puzzle = new kinaneasy();
-                puzzle.setVisible(true);
-            }
+        EventQueue.invokeLater(() -> {
+            kinaneasy puzzle = new kinaneasy();
+            puzzle.setVisible(true);
         });
     }
 
