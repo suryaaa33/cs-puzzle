@@ -62,7 +62,7 @@ public class homeview extends javax.swing.JFrame {
                         .addGap(154, 154, 154)
                         .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 255, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGap(213, 213, 213)
+                        .addGap(212, 212, 212)
                         .addComponent(playbtn, javax.swing.GroupLayout.PREFERRED_SIZE, 138, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addContainerGap(170, Short.MAX_VALUE))
         );
@@ -71,9 +71,9 @@ public class homeview extends javax.swing.JFrame {
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addGap(61, 61, 61)
                 .addComponent(jLabel1)
-                .addGap(53, 53, 53)
+                .addGap(79, 79, 79)
                 .addComponent(playbtn, javax.swing.GroupLayout.PREFERRED_SIZE, 47, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(120, Short.MAX_VALUE))
+                .addContainerGap(94, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -92,10 +92,10 @@ public class homeview extends javax.swing.JFrame {
 
     private void playbtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_playbtnActionPerformed
         // TODO add your handling code here:
-            nameview nv = new nameview();
-            nv.setLocationRelativeTo(null);
-            nv.setVisible(true);
-            this.setVisible(false);
+        nameview nv = new nameview();
+        nv.setLocationRelativeTo(null);
+        nv.setVisible(true);
+        this.setVisible(false);
     }//GEN-LAST:event_playbtnActionPerformed
 
     /**

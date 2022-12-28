@@ -1,12 +1,6 @@
 /*
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
-package gambarpuzzle;
-
-/**
- *
- * @author user
+ * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
  */
 import java.awt.BorderLayout;
 import java.awt.Color;
@@ -29,7 +23,6 @@ import java.util.List;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import javax.imageio.ImageIO;
-import javax.lang.model.SourceVersion;
 import javax.swing.AbstractAction;
 import javax.swing.BorderFactory;
 import javax.swing.ImageIcon;
@@ -38,7 +31,6 @@ import javax.swing.JComponent;
 import javax.swing.JFrame;
 import javax.swing.JOptionPane;
 import javax.swing.JPanel;
-
 
 class MyButton extends JButton {
 
@@ -88,7 +80,7 @@ class MyButton extends JButton {
     }
 }
 
-public class elhard extends JFrame{
+public class gambareasy2 extends JFrame {
 
     private JPanel panel;
     private BufferedImage source;
@@ -100,10 +92,10 @@ public class elhard extends JFrame{
     private List<MyButton> buttons;
     private List<Point> solution;
 
-    private final int NUMBER_OF_BUTTONS = 64;
-    private final int DESIRED_WIDTH = 600;
+    private final int NUMBER_OF_BUTTONS = 12;
+    private final int DESIRED_WIDTH = 300;
 
-    public elhard() {
+    public gambareasy2() {
 
         initUI();
     }
@@ -115,73 +107,21 @@ public class elhard extends JFrame{
         solution.add(new Point(0, 0));
         solution.add(new Point(0, 1));
         solution.add(new Point(0, 2));
-        solution.add(new Point(0, 3));
-        solution.add(new Point(0, 4));
-        solution.add(new Point(0, 5));
-        solution.add(new Point(0, 6));
-        solution.add(new Point(0, 7));
         solution.add(new Point(1, 0));
         solution.add(new Point(1, 1));
         solution.add(new Point(1, 2));
-        solution.add(new Point(1, 3));
-        solution.add(new Point(1, 4));
-        solution.add(new Point(1, 5));
-        solution.add(new Point(1, 6));
-        solution.add(new Point(1, 7));
         solution.add(new Point(2, 0));
         solution.add(new Point(2, 1));
         solution.add(new Point(2, 2));
-        solution.add(new Point(2, 3));
-        solution.add(new Point(2, 4));
-        solution.add(new Point(2, 5));
-        solution.add(new Point(2, 6));
-        solution.add(new Point(2, 7));
         solution.add(new Point(3, 0));
         solution.add(new Point(3, 1));
         solution.add(new Point(3, 2));
-        solution.add(new Point(3, 3));
-        solution.add(new Point(3, 4));
-        solution.add(new Point(3, 5));
-        solution.add(new Point(3, 6));
-        solution.add(new Point(3, 7));
-        solution.add(new Point(4, 0));
-        solution.add(new Point(4, 1));
-        solution.add(new Point(4, 2));
-        solution.add(new Point(4, 3));
-        solution.add(new Point(4, 4));
-        solution.add(new Point(4, 5));
-        solution.add(new Point(4, 6));
-        solution.add(new Point(4, 7));
-        solution.add(new Point(5, 0));
-        solution.add(new Point(5, 1));
-        solution.add(new Point(5, 2));
-        solution.add(new Point(5, 3));
-        solution.add(new Point(5, 4));
-        solution.add(new Point(5, 5));
-        solution.add(new Point(5, 6));
-        solution.add(new Point(5, 7));
-        solution.add(new Point(6, 0));
-        solution.add(new Point(6, 1));
-        solution.add(new Point(6, 2));
-        solution.add(new Point(6, 3));
-        solution.add(new Point(6, 4));
-        solution.add(new Point(6, 5));
-        solution.add(new Point(6, 6));
-        solution.add(new Point(6, 7));
-        solution.add(new Point(7, 0));
-        solution.add(new Point(7, 1));
-        solution.add(new Point(7, 2));
-        solution.add(new Point(7, 3));
-        solution.add(new Point(7, 4));
-        solution.add(new Point(7, 5));
-        solution.add(new Point(7, 6));
-        solution.add(new Point(7, 7));
-        
+
         buttons = new ArrayList<>();
 
         panel = new JPanel();
         panel.setBorder(BorderFactory.createLineBorder(Color.gray));
-        panel.setLayout(new GridLayout(8, 8, 0, 0));
+        panel.setLayout(new GridLayout(4, 3, 0, 0));
 
         try {
             source = loadImage();
@@ -190,7 +130,7 @@ public class elhard extends JFrame{
                     BufferedImage.TYPE_INT_ARGB);
 
         } catch (IOException ex) {
-            Logger.getLogger(elhard.class.getName()).log(
+            Logger.getLogger(gambareasy2.class.getName()).log(
                     Level.SEVERE, null, ex);
         }
 
@@ -199,18 +139,18 @@ public class elhard extends JFrame{
 
         add(panel, BorderLayout.CENTER);
 
-        for (int i = 0; i < 8; i++) {
+        for (int i = 0; i < 4; i++) {
 
-            for (int j = 0; j < 8; j++) {
+            for (int j = 0; j < 3; j++) {
 
                 image = createImage(new FilteredImageSource(resized.getSource(),
-                        new CropImageFilter(j * width / 8, i * height / 8,
-                                (width / 8), height / 8)));
+                        new CropImageFilter(j * width / 3, i * height / 4,
+                                (width / 3), height / 4)));
                 
                 MyButton button = new MyButton(image);
                 button.putClientProperty("position", new Point(i, j));
 
-                if (i == 7 && j == 7) {
+                if (i == 3 && j == 2) {
                     lastButton = new MyButton();
                     lastButton.setBorderPainted(false);
                     lastButton.setContentAreaFilled(false);
@@ -249,7 +189,7 @@ public class elhard extends JFrame{
 
     private BufferedImage loadImage() throws IOException {
 
-        BufferedImage bimg = ImageIO.read(new File("src/gambarpuzzle/elpuzzle.jpeg"));
+        BufferedImage bimg = ImageIO.read(new File("C:\\Users\\Tuti\\Documents\\project cs puzzle\\poto-poto"));
 
         return bimg;
     }
@@ -288,7 +228,7 @@ public class elhard extends JFrame{
             int bidx = buttons.indexOf(button);
 
             if ((bidx - 1 == lidx) || (bidx + 1 == lidx)
-                    || (bidx - 8 == lidx) || (bidx + 8 == lidx)) {
+                    || (bidx - 3 == lidx) || (bidx + 3 == lidx)) {
                 Collections.swap(buttons, bidx, lidx);
                 updateButtons();
             }
@@ -326,17 +266,36 @@ public class elhard extends JFrame{
         return ls1.toString().contentEquals(ls2.toString());
     }
 
-    
     public static void main(String[] args) {
 
-        EventQueue.invokeLater(() -> {
-            elhard puzzle = new elhard();
-            puzzle.setVisible(true);
+        EventQueue.invokeLater(new Runnable() {
+
+            @Override
+            public void run() {
+                gambareasy2 puzzle = new gambareasy2();
+                puzzle.setVisible(true);
+            }
         });
     }
+    // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
+    private void initComponents() {
 
-    public SourceVersion getSupportedSourceVersion() {
-        return SourceVersion.latest();
-    }
-}
+        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+
+        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
+        getContentPane().setLayout(layout);
+        layout.setHorizontalGroup(
+            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 400, Short.MAX_VALUE)
+        );
+        layout.setVerticalGroup(
+            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 300, Short.MAX_VALUE)
+        );
+
+        pack();
+    }// </editor-fold>//GEN-END:initComponents
+
+    // Variables declaration - do not modify//GEN-BEGIN:variables
+    // End of variables declaration//GEN-END:variables
 

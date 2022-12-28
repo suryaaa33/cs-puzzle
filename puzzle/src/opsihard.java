@@ -1,3 +1,8 @@
+
+import gambarpuzzle.abbashard;
+import gambarpuzzle.elhard;
+import gambarpuzzle.yahyahard;
+
 /*
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
@@ -31,9 +36,9 @@ public class opsihard extends javax.swing.JFrame {
         jLabel1 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
-        jButton3 = new javax.swing.JButton();
-        jButton4 = new javax.swing.JButton();
-        jButton5 = new javax.swing.JButton();
+        yahyabtn = new javax.swing.JButton();
+        elbtn = new javax.swing.JButton();
+        abbasbtn = new javax.swing.JButton();
         backbtnhard = new javax.swing.JButton();
 
         jButton2.setBackground(new java.awt.Color(153, 153, 153));
@@ -59,22 +64,32 @@ public class opsihard extends javax.swing.JFrame {
         jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/abbas.jpeg"))); // NOI18N
         jLabel3.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(51, 51, 0), 3, true));
 
-        jButton3.setBackground(new java.awt.Color(153, 153, 153));
-        jButton3.setFont(new java.awt.Font("Comic Sans MS", 1, 12)); // NOI18N
-        jButton3.setText("YAHYA");
-
-        jButton4.setBackground(new java.awt.Color(153, 153, 153));
-        jButton4.setFont(new java.awt.Font("Comic Sans MS", 1, 12)); // NOI18N
-        jButton4.setText("EL");
-        jButton4.addActionListener(new java.awt.event.ActionListener() {
+        yahyabtn.setBackground(new java.awt.Color(153, 153, 153));
+        yahyabtn.setFont(new java.awt.Font("Comic Sans MS", 1, 12)); // NOI18N
+        yahyabtn.setText("YAHYA");
+        yahyabtn.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton4ActionPerformed(evt);
+                yahyabtnActionPerformed(evt);
             }
         });
 
-        jButton5.setBackground(new java.awt.Color(153, 153, 153));
-        jButton5.setFont(new java.awt.Font("Comic Sans MS", 1, 12)); // NOI18N
-        jButton5.setText("ABBAS");
+        elbtn.setBackground(new java.awt.Color(153, 153, 153));
+        elbtn.setFont(new java.awt.Font("Comic Sans MS", 1, 12)); // NOI18N
+        elbtn.setText("EL");
+        elbtn.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                elbtnActionPerformed(evt);
+            }
+        });
+
+        abbasbtn.setBackground(new java.awt.Color(153, 153, 153));
+        abbasbtn.setFont(new java.awt.Font("Comic Sans MS", 1, 12)); // NOI18N
+        abbasbtn.setText("ABBAS");
+        abbasbtn.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                abbasbtnActionPerformed(evt);
+            }
+        });
 
         backbtnhard.setBackground(new java.awt.Color(204, 204, 204));
         backbtnhard.setFont(new java.awt.Font("Comic Sans MS", 1, 14)); // NOI18N
@@ -100,7 +115,7 @@ public class opsihard extends javax.swing.JFrame {
                         .addComponent(jLabel1))
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGap(67, 67, 67)
-                        .addComponent(jButton3)))
+                        .addComponent(yahyabtn)))
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 50, Short.MAX_VALUE)
@@ -110,9 +125,9 @@ public class opsihard extends javax.swing.JFrame {
                         .addGap(45, 45, 45))
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGap(66, 66, 66)
-                        .addComponent(jButton4, javax.swing.GroupLayout.PREFERRED_SIZE, 86, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(elbtn, javax.swing.GroupLayout.PREFERRED_SIZE, 86, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(jButton5)
+                        .addComponent(abbasbtn)
                         .addGap(74, 74, 74))))
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addContainerGap()
@@ -129,18 +144,18 @@ public class opsihard extends javax.swing.JFrame {
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addComponent(jLabel3)
                         .addGap(18, 18, 18)
-                        .addComponent(jButton5)
+                        .addComponent(abbasbtn)
                         .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                             .addGroup(jPanel1Layout.createSequentialGroup()
                                 .addComponent(jLabel1)
                                 .addGap(18, 18, 18)
-                                .addComponent(jButton3))
+                                .addComponent(yahyabtn))
                             .addGroup(jPanel1Layout.createSequentialGroup()
                                 .addComponent(jLabel2)
                                 .addGap(18, 18, 18)
-                                .addComponent(jButton4)))
+                                .addComponent(elbtn)))
                         .addGap(14, 14, 14)
                         .addComponent(backbtnhard, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addContainerGap())))
@@ -160,9 +175,13 @@ public class opsihard extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
+    private void elbtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_elbtnActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jButton4ActionPerformed
+        elhard eh = new elhard();
+            eh.setLocationRelativeTo(null);
+            eh.setVisible(true);
+            this.setVisible(false);
+    }//GEN-LAST:event_elbtnActionPerformed
 
     private void backbtnhardActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_backbtnhardActionPerformed
         // TODO add your handling code here:
@@ -171,6 +190,22 @@ public class opsihard extends javax.swing.JFrame {
             lv.setVisible(true);
             this.setVisible(false);
     }//GEN-LAST:event_backbtnhardActionPerformed
+
+    private void yahyabtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_yahyabtnActionPerformed
+        // TODO add your handling code here:
+        yahyahard yh = new yahyahard();
+            yh.setLocationRelativeTo(null);
+            yh.setVisible(true);
+            this.setVisible(false);
+    }//GEN-LAST:event_yahyabtnActionPerformed
+
+    private void abbasbtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_abbasbtnActionPerformed
+        // TODO add your handling code here:
+        abbashard ah = new abbashard();
+            ah.setLocationRelativeTo(null);
+            ah.setVisible(true);
+            this.setVisible(false);
+    }//GEN-LAST:event_abbasbtnActionPerformed
 
     /**
      * @param args the command line arguments
@@ -208,15 +243,15 @@ public class opsihard extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton abbasbtn;
     private javax.swing.JButton backbtnhard;
+    private javax.swing.JButton elbtn;
     private javax.swing.JButton jButton2;
-    private javax.swing.JButton jButton3;
-    private javax.swing.JButton jButton4;
-    private javax.swing.JButton jButton5;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JPanel jPanel1;
+    private javax.swing.JButton yahyabtn;
     // End of variables declaration//GEN-END:variables
 }

@@ -1,3 +1,8 @@
+
+import gambarpuzzle.basukimedium;
+import gambarpuzzle.nillamedium;
+import gambarpuzzle.suryamedium;
+
 /*
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
@@ -62,14 +67,29 @@ public class opsimedium extends javax.swing.JFrame {
         suryamediumbtn.setBackground(new java.awt.Color(153, 153, 153));
         suryamediumbtn.setFont(new java.awt.Font("Comic Sans MS", 1, 12)); // NOI18N
         suryamediumbtn.setText("SURYA");
+        suryamediumbtn.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                suryamediumbtnActionPerformed(evt);
+            }
+        });
 
         nillamediumbtn.setBackground(new java.awt.Color(153, 153, 153));
         nillamediumbtn.setFont(new java.awt.Font("Comic Sans MS", 1, 12)); // NOI18N
         nillamediumbtn.setText("NILLA");
+        nillamediumbtn.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                nillamediumbtnActionPerformed(evt);
+            }
+        });
 
         basukimediumbtn.setBackground(new java.awt.Color(153, 153, 153));
         basukimediumbtn.setFont(new java.awt.Font("Comic Sans MS", 1, 12)); // NOI18N
         basukimediumbtn.setText("BASUKI");
+        basukimediumbtn.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                basukimediumbtnActionPerformed(evt);
+            }
+        });
 
         jLabel4.setFont(new java.awt.Font("Comic Sans MS", 1, 24)); // NOI18N
         jLabel4.setForeground(new java.awt.Color(51, 51, 0));
@@ -160,6 +180,30 @@ public class opsimedium extends javax.swing.JFrame {
             lv.setVisible(true);
             this.setVisible(false);
     }//GEN-LAST:event_backbtnmediumActionPerformed
+
+    private void suryamediumbtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_suryamediumbtnActionPerformed
+        // TODO add your handling code here:
+        suryamedium sm = new suryamedium();
+            sm.setLocationRelativeTo(null);
+            sm.setVisible(true);
+            this.setVisible(false);
+    }//GEN-LAST:event_suryamediumbtnActionPerformed
+
+    private void nillamediumbtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_nillamediumbtnActionPerformed
+        // TODO add your handling code here:
+        nillamedium nm = new nillamedium();
+            nm.setLocationRelativeTo(null);
+            nm.setVisible(true);
+            this.setVisible(false);
+    }//GEN-LAST:event_nillamediumbtnActionPerformed
+
+    private void basukimediumbtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_basukimediumbtnActionPerformed
+        // TODO add your handling code here:
+        basukimedium bm = new basukimedium();
+            bm.setLocationRelativeTo(null);
+            bm.setVisible(true);
+            this.setVisible(false);
+    }//GEN-LAST:event_basukimediumbtnActionPerformed
 
     /**
      * @param args the command line arguments

@@ -194,6 +194,9 @@
             </Property>
             <Property name="text" type="java.lang.String" value="SURYA"/>
           </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="suryamediumbtnActionPerformed"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JButton" name="nillamediumbtn">
           <Properties>
@@ -205,6 +208,9 @@
             </Property>
             <Property name="text" type="java.lang.String" value="NILLA"/>
           </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="nillamediumbtnActionPerformed"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JButton" name="basukimediumbtn">
           <Properties>
@@ -216,6 +222,9 @@
             </Property>
             <Property name="text" type="java.lang.String" value="BASUKI"/>
           </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="basukimediumbtnActionPerformed"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JLabel" name="jLabel4">
           <Properties>
