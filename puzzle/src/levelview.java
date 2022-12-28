@@ -126,7 +126,6 @@ public class levelview extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void easybtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_easybtnActionPerformed
-        // TODO add your handling code here:
             opsieasy oe = new opsieasy();
             oe.setLocationRelativeTo(null);
             oe.setVisible(true);
@@ -134,7 +133,6 @@ public class levelview extends javax.swing.JFrame {
     }//GEN-LAST:event_easybtnActionPerformed
 
     private void normalbtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_normalbtnActionPerformed
-        // TODO add your handling code here:
             opsimedium om = new opsimedium();
             om.setLocationRelativeTo(null);
             om.setVisible(true);
@@ -142,8 +140,7 @@ public class levelview extends javax.swing.JFrame {
     }//GEN-LAST:event_normalbtnActionPerformed
 
     private void hardbtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_hardbtnActionPerformed
-        // TODO add your handling code here:
-            opsihard oh = new opsihard();
+             opsihard oh = new opsihard();
             oh.setLocationRelativeTo(null);
             oh.setVisible(true);
             this.setVisible(false);

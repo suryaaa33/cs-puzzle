@@ -1,3 +1,5 @@
+package gambarpuzzle;
+
 /*
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
@@ -7,7 +9,6 @@
  *
  * @author user
  */
-
 import java.awt.BorderLayout;
 import java.awt.Color;
 import java.awt.EventQueue;
@@ -88,7 +89,7 @@ class MyButton extends JButton {
     }
 }
 
-public class marioeasy extends JFrame{
+public class radieasy extends JFrame{
 
     private JPanel panel;
     private BufferedImage source;
@@ -103,7 +104,7 @@ public class marioeasy extends JFrame{
     private final int NUMBER_OF_BUTTONS = 9;
     private final int DESIRED_WIDTH = 300;
 
-    public marioeasy() {
+    public radieasy() {
 
         initUI();
     }
@@ -135,7 +136,7 @@ public class marioeasy extends JFrame{
                     BufferedImage.TYPE_INT_ARGB);
 
         } catch (IOException ex) {
-            Logger.getLogger(marioeasy.class.getName()).log(
+            Logger.getLogger(radieasy.class.getName()).log(
                     Level.SEVERE, null, ex);
         }
 
@@ -194,7 +195,7 @@ public class marioeasy extends JFrame{
 
     private BufferedImage loadImage() throws IOException {
 
-        BufferedImage bimg = ImageIO.read(new File("src/gambarpuzzle/mariopuzzle.jpeg"));
+        BufferedImage bimg = ImageIO.read(new File("src/gambarpuzzle/radipuzzle.jpeg"));
 
         return bimg;
     }
@@ -275,7 +276,7 @@ public class marioeasy extends JFrame{
     public static void main(String[] args) {
 
         EventQueue.invokeLater(() -> {
-            marioeasy puzzle = new marioeasy();
+            radieasy puzzle = new radieasy();
             puzzle.setVisible(true);
         });
     }
@@ -284,3 +285,4 @@ public class marioeasy extends JFrame{
         return SourceVersion.latest();
     }
 }
+

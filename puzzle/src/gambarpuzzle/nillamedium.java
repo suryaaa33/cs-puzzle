@@ -2,6 +2,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
+package gambarpuzzle;
 
 /**
  *
@@ -87,7 +88,7 @@ class MyButton extends JButton {
     }
 }
 
-public class kinaneasy extends JFrame{
+public class nillamedium extends JFrame{
 
     private JPanel panel;
     private BufferedImage source;
@@ -99,10 +100,10 @@ public class kinaneasy extends JFrame{
     private List<MyButton> buttons;
     private List<Point> solution;
 
-    private final int NUMBER_OF_BUTTONS = 9;
-    private final int DESIRED_WIDTH = 300;
+    private final int NUMBER_OF_BUTTONS = 25;
+    private final int DESIRED_WIDTH = 500;
 
-    public kinaneasy() {
+    public nillamedium() {
 
         initUI();
     }
@@ -114,18 +115,34 @@ public class kinaneasy extends JFrame{
         solution.add(new Point(0, 0));
         solution.add(new Point(0, 1));
         solution.add(new Point(0, 2));
+        solution.add(new Point(0, 3));
+        solution.add(new Point(0, 4));
         solution.add(new Point(1, 0));
         solution.add(new Point(1, 1));
         solution.add(new Point(1, 2));
+        solution.add(new Point(1, 3));
+        solution.add(new Point(1, 4));
         solution.add(new Point(2, 0));
         solution.add(new Point(2, 1));
         solution.add(new Point(2, 2));
+        solution.add(new Point(2, 3));
+        solution.add(new Point(2, 4));
+        solution.add(new Point(3, 0));
+        solution.add(new Point(3, 1));
+        solution.add(new Point(3, 2));
+        solution.add(new Point(3, 3));
+        solution.add(new Point(3, 4));
+        solution.add(new Point(4, 0));
+        solution.add(new Point(4, 1));
+        solution.add(new Point(4, 2));
+        solution.add(new Point(4, 3));
+        solution.add(new Point(4, 4));
         
         buttons = new ArrayList<>();
 
         panel = new JPanel();
         panel.setBorder(BorderFactory.createLineBorder(Color.gray));
-        panel.setLayout(new GridLayout(3, 3, 0, 0));
+        panel.setLayout(new GridLayout(5, 5, 0, 0));
 
         try {
             source = loadImage();
@@ -134,7 +151,7 @@ public class kinaneasy extends JFrame{
                     BufferedImage.TYPE_INT_ARGB);
 
         } catch (IOException ex) {
-            Logger.getLogger(kinaneasy.class.getName()).log(
+            Logger.getLogger(suryamedium.class.getName()).log(
                     Level.SEVERE, null, ex);
         }
 
@@ -143,18 +160,18 @@ public class kinaneasy extends JFrame{
 
         add(panel, BorderLayout.CENTER);
 
-        for (int i = 0; i < 3; i++) {
+        for (int i = 0; i < 5; i++) {
 
-            for (int j = 0; j < 3; j++) {
+            for (int j = 0; j < 5; j++) {
 
                 image = createImage(new FilteredImageSource(resized.getSource(),
-                        new CropImageFilter(j * width / 3, i * height / 3,
-                                (width / 3), height / 3)));
+                        new CropImageFilter(j * width / 5, i * height / 5,
+                                (width / 5), height / 5)));
                 
                 MyButton button = new MyButton(image);
                 button.putClientProperty("position", new Point(i, j));
 
-                if (i == 2 && j == 2) {
+                if (i == 4 && j == 4) {
                     lastButton = new MyButton();
                     lastButton.setBorderPainted(false);
                     lastButton.setContentAreaFilled(false);
@@ -193,7 +210,7 @@ public class kinaneasy extends JFrame{
 
     private BufferedImage loadImage() throws IOException {
 
-        BufferedImage bimg = ImageIO.read(new File("src/gambarpuzzle/kinanpuzzle.jpeg"));
+        BufferedImage bimg = ImageIO.read(new File("src/gambarpuzzle/nillapuzzle.jpeg"));
 
         return bimg;
     }
@@ -232,7 +249,7 @@ public class kinaneasy extends JFrame{
             int bidx = buttons.indexOf(button);
 
             if ((bidx - 1 == lidx) || (bidx + 1 == lidx)
-                    || (bidx - 3 == lidx) || (bidx + 3 == lidx)) {
+                    || (bidx - 5 == lidx) || (bidx + 5 == lidx)) {
                 Collections.swap(buttons, bidx, lidx);
                 updateButtons();
             }
@@ -273,9 +290,13 @@ public class kinaneasy extends JFrame{
     
     public static void main(String[] args) {
 
-        EventQueue.invokeLater(() -> {
-            kinaneasy puzzle = new kinaneasy();
-            puzzle.setVisible(true);
+        EventQueue.invokeLater(new Runnable() {
+
+            @Override
+            public void run() {
+                nillamedium puzzle = new nillamedium();
+                puzzle.setVisible(true);
+            }
         });
     }
 

@@ -30,9 +30,9 @@ public class opsimedium extends javax.swing.JFrame {
         jLabel1 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
-        jButton2 = new javax.swing.JButton();
-        jButton3 = new javax.swing.JButton();
-        jButton4 = new javax.swing.JButton();
+        suryamediumbtn = new javax.swing.JButton();
+        nillamediumbtn = new javax.swing.JButton();
+        basukimediumbtn = new javax.swing.JButton();
         jLabel4 = new javax.swing.JLabel();
         backbtnmedium = new javax.swing.JButton();
 
@@ -59,17 +59,17 @@ public class opsimedium extends javax.swing.JFrame {
         jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/sultan2.jpeg"))); // NOI18N
         jLabel3.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(51, 51, 0), 3, true));
 
-        jButton2.setBackground(new java.awt.Color(153, 153, 153));
-        jButton2.setFont(new java.awt.Font("Comic Sans MS", 1, 12)); // NOI18N
-        jButton2.setText("SURYA");
+        suryamediumbtn.setBackground(new java.awt.Color(153, 153, 153));
+        suryamediumbtn.setFont(new java.awt.Font("Comic Sans MS", 1, 12)); // NOI18N
+        suryamediumbtn.setText("SURYA");
 
-        jButton3.setBackground(new java.awt.Color(153, 153, 153));
-        jButton3.setFont(new java.awt.Font("Comic Sans MS", 1, 12)); // NOI18N
-        jButton3.setText("NILLA");
+        nillamediumbtn.setBackground(new java.awt.Color(153, 153, 153));
+        nillamediumbtn.setFont(new java.awt.Font("Comic Sans MS", 1, 12)); // NOI18N
+        nillamediumbtn.setText("NILLA");
 
-        jButton4.setBackground(new java.awt.Color(153, 153, 153));
-        jButton4.setFont(new java.awt.Font("Comic Sans MS", 1, 12)); // NOI18N
-        jButton4.setText("BASUKI");
+        basukimediumbtn.setBackground(new java.awt.Color(153, 153, 153));
+        basukimediumbtn.setFont(new java.awt.Font("Comic Sans MS", 1, 12)); // NOI18N
+        basukimediumbtn.setText("BASUKI");
 
         jLabel4.setFont(new java.awt.Font("Comic Sans MS", 1, 24)); // NOI18N
         jLabel4.setForeground(new java.awt.Color(51, 51, 0));
@@ -103,14 +103,14 @@ public class opsimedium extends javax.swing.JFrame {
                                 .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 126, javax.swing.GroupLayout.PREFERRED_SIZE))
                             .addGroup(jPanel1Layout.createSequentialGroup()
                                 .addGap(76, 76, 76)
-                                .addComponent(jButton2)
+                                .addComponent(suryamediumbtn)
                                 .addGap(106, 106, 106)
-                                .addComponent(jButton3)))
+                                .addComponent(nillamediumbtn)))
                         .addGap(48, 48, 48)
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 124, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                                .addComponent(jButton4)
+                                .addComponent(basukimediumbtn)
                                 .addGap(22, 22, 22))))
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addContainerGap()
@@ -129,9 +129,9 @@ public class opsimedium extends javax.swing.JFrame {
                     .addComponent(jLabel3))
                 .addGap(18, 18, 18)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jButton2)
-                    .addComponent(jButton3)
-                    .addComponent(jButton4))
+                    .addComponent(suryamediumbtn)
+                    .addComponent(nillamediumbtn)
+                    .addComponent(basukimediumbtn))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(backbtnmedium, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(17, Short.MAX_VALUE))
@@ -198,14 +198,14 @@ public class opsimedium extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton backbtnmedium;
+    private javax.swing.JButton basukimediumbtn;
     private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButton2;
-    private javax.swing.JButton jButton3;
-    private javax.swing.JButton jButton4;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JPanel jPanel1;
+    private javax.swing.JButton nillamediumbtn;
+    private javax.swing.JButton suryamediumbtn;
     // End of variables declaration//GEN-END:variables
 }
