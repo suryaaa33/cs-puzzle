@@ -218,10 +218,10 @@ public class nameview extends javax.swing.JFrame {
         //</editor-fold>
 
         /* Create and display the form */
-        java.awt.EventQueue.invokeLater(new Runnable() {
-            public void run() {
-                new nameview().setVisible(true);
-            }
+        java.awt.EventQueue.invokeLater(() -> {
+            nameview nv = new nameview();
+            nv.setLocationRelativeTo(null);
+            nv.setVisible(true);
         });
     }
 

@@ -201,7 +201,9 @@ public class levelview extends javax.swing.JFrame {
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(() -> {
-            new levelview().setVisible(true);
+            levelview lv = new levelview();
+            lv.setLocationRelativeTo(null);
+            lv.setVisible(true);
         });
     }
 

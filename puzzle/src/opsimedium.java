@@ -233,10 +233,10 @@ public class opsimedium extends javax.swing.JFrame {
         //</editor-fold>
 
         /* Create and display the form */
-        java.awt.EventQueue.invokeLater(new Runnable() {
-            public void run() {
-                new opsimedium().setVisible(true);
-            }
+        java.awt.EventQueue.invokeLater(() -> {
+            opsimedium om = new opsimedium();
+            om.setLocationRelativeTo(null);
+            om.setVisible(true);
         });
     }
 

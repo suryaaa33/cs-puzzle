@@ -237,7 +237,9 @@ public class opsieasy extends javax.swing.JFrame {
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(() -> {
-            new opsieasy().setVisible(true);
+            opsieasy oe = new opsieasy();
+            oe.setLocationRelativeTo(null);
+            oe.setVisible(true);
         });
     }
 

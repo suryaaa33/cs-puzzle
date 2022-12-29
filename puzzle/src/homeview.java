@@ -127,12 +127,10 @@ public class homeview extends javax.swing.JFrame {
         //</editor-fold>
 
         /* Create and display the form */
-        java.awt.EventQueue.invokeLater(new Runnable() {
-            public void run() {
-                homeview hv = new homeview();
-                hv.setLocationRelativeTo(null);
-                hv.setVisible(true);
-            }
+        java.awt.EventQueue.invokeLater(() -> {
+            homeview hv = new homeview();
+            hv.setLocationRelativeTo(null);
+            hv.setVisible(true);
         });
     }
     

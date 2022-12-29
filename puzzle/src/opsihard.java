@@ -235,10 +235,10 @@ public class opsihard extends javax.swing.JFrame {
         //</editor-fold>
 
         /* Create and display the form */
-        java.awt.EventQueue.invokeLater(new Runnable() {
-            public void run() {
-                new opsihard().setVisible(true);
-            }
+        java.awt.EventQueue.invokeLater(() -> {
+            opsihard oh = new opsihard();
+            oh.setLocationRelativeTo(null);
+            oh.setVisible(true);
         });
     }
 
