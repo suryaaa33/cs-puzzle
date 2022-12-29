@@ -101,7 +101,7 @@ public class abbashard extends JFrame{
     private List<Point> solution;
 
     private final int NUMBER_OF_BUTTONS = 64;
-    private final int DESIRED_WIDTH = 800;
+    private final int DESIRED_WIDTH = 600;
 
     public abbashard() {
 
@@ -316,8 +316,8 @@ public class abbashard extends JFrame{
         }
 
         if (compareList(solution, current)) {
-            JOptionPane.showMessageDialog(panel, "Finished",
-                    "Congratulation", JOptionPane.INFORMATION_MESSAGE);
+            JOptionPane.showMessageDialog(panel, "kamu salah satu orang keren yang menyelesaikan game ini!!",
+                    "hj. Slamet", JOptionPane.INFORMATION_MESSAGE);
         }
     }
 

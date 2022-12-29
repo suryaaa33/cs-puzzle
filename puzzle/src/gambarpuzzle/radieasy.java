@@ -262,8 +262,8 @@ public class radieasy extends JFrame{
         }
 
         if (compareList(solution, current)) {
-            JOptionPane.showMessageDialog(panel, "Finished",
-                    "Congratulation", JOptionPane.INFORMATION_MESSAGE);
+            JOptionPane.showMessageDialog(panel, "kamu salah satu orang keren yang menyelesaikan game ini!!",
+                    "hj. Slamet", JOptionPane.INFORMATION_MESSAGE);
         }
     }
 

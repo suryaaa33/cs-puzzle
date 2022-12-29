@@ -9,7 +9,6 @@ package gambarpuzzle;
  *
  * @author user
  */
-import gambarpuzzle.MyButton;
 import java.awt.BorderLayout;
 import java.awt.Color;
 import java.awt.EventQueue;
@@ -263,8 +262,8 @@ public class kinaneasy extends JFrame{
         }
 
         if (compareList(solution, current)) {
-            JOptionPane.showMessageDialog(panel, "Finished",
-                    "Congratulation", JOptionPane.INFORMATION_MESSAGE);
+            JOptionPane.showMessageDialog(panel, "kamu salah satu orang keren yang menyelesaikan game ini!!",
+                    "hj. Slamet", JOptionPane.INFORMATION_MESSAGE);
         }
     }
 

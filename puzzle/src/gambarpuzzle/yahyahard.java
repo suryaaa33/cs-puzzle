@@ -101,7 +101,7 @@ public class yahyahard extends JFrame{
     private List<Point> solution;
 
     private final int NUMBER_OF_BUTTONS = 64;
-    private final int DESIRED_WIDTH = 800;
+    private final int DESIRED_WIDTH = 600;
 
     public yahyahard() {
 
@@ -180,7 +180,7 @@ public class yahyahard extends JFrame{
         buttons = new ArrayList<>();
 
         panel = new JPanel();
-        panel.setBorder(BorderFactory.createLineBorder(Color.gray));
+        panel.setBorder(BorderFactory.createLineBorder(Color.red));
         panel.setLayout(new GridLayout(8, 8, 0, 0));
 
         try {
@@ -316,8 +316,8 @@ public class yahyahard extends JFrame{
         }
 
         if (compareList(solution, current)) {
-            JOptionPane.showMessageDialog(panel, "Finished",
-                    "Congratulation", JOptionPane.INFORMATION_MESSAGE);
+            JOptionPane.showMessageDialog(panel, "kamu salah satu orang keren yang menyelesaikan game ini!!",
+                    "hj. Slamet", JOptionPane.INFORMATION_MESSAGE);
         }
     }
 
@@ -329,13 +329,9 @@ public class yahyahard extends JFrame{
     
     public static void main(String[] args) {
 
-        EventQueue.invokeLater(new Runnable() {
-
-            @Override
-            public void run() {
-                yahyahard puzzle = new yahyahard();
-                puzzle.setVisible(true);
-            }
+        EventQueue.invokeLater(() -> {
+            yahyahard puzzle = new yahyahard();
+            puzzle.setVisible(true);
         });
     }
 

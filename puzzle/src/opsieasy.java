@@ -174,6 +174,7 @@ public class opsieasy extends javax.swing.JFrame {
             re.setLocationRelativeTo(null);
             re.setVisible(true);
             this.setVisible(false);
+            
         
     }//GEN-LAST:event_tombolradiActionPerformed
 
@@ -231,10 +232,8 @@ public class opsieasy extends javax.swing.JFrame {
         //</editor-fold>
 
         /* Create and display the form */
-        java.awt.EventQueue.invokeLater(new Runnable() {
-            public void run() {
-                new opsieasy().setVisible(true);
-            }
+        java.awt.EventQueue.invokeLater(() -> {
+            new opsieasy().setVisible(true);
         });
     }
 
@@ -253,4 +252,5 @@ public class opsieasy extends javax.swing.JFrame {
     void setLocationRelativeTo(Object object) {
         throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
     }
+
 }

@@ -34,6 +34,7 @@ public class nameview extends javax.swing.JFrame {
         muncul_nama = new javax.swing.JTextField();
         enter_nama = new javax.swing.JButton();
         hal_selanjutnya = new javax.swing.JButton();
+        hal_selanjutnya1 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -56,6 +57,7 @@ public class nameview extends javax.swing.JFrame {
 
         muncul_nama.setBackground(new java.awt.Color(204, 119, 39));
         muncul_nama.setFont(new java.awt.Font("Comic Sans MS", 3, 18)); // NOI18N
+        muncul_nama.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         muncul_nama.setBorder(null);
         muncul_nama.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -63,7 +65,7 @@ public class nameview extends javax.swing.JFrame {
             }
         });
 
-        enter_nama.setBackground(new java.awt.Color(204, 204, 204));
+        enter_nama.setBackground(new java.awt.Color(153, 153, 153));
         enter_nama.setFont(new java.awt.Font("Comic Sans MS", 1, 10)); // NOI18N
         enter_nama.setText("ENTER");
         enter_nama.addActionListener(new java.awt.event.ActionListener() {
@@ -72,12 +74,21 @@ public class nameview extends javax.swing.JFrame {
             }
         });
 
-        hal_selanjutnya.setBackground(new java.awt.Color(204, 204, 204));
-        hal_selanjutnya.setFont(new java.awt.Font("Comic Sans MS", 1, 14)); // NOI18N
+        hal_selanjutnya.setBackground(new java.awt.Color(153, 153, 153));
+        hal_selanjutnya.setFont(new java.awt.Font("Comic Sans MS", 1, 12)); // NOI18N
         hal_selanjutnya.setText(">");
         hal_selanjutnya.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 hal_selanjutnyaActionPerformed(evt);
+            }
+        });
+
+        hal_selanjutnya1.setBackground(new java.awt.Color(153, 153, 153));
+        hal_selanjutnya1.setFont(new java.awt.Font("Comic Sans MS", 1, 12)); // NOI18N
+        hal_selanjutnya1.setText("<");
+        hal_selanjutnya1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                hal_selanjutnya1ActionPerformed(evt);
             }
         });
 
@@ -86,11 +97,13 @@ public class nameview extends javax.swing.JFrame {
         jPanel1Layout.setHorizontalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                .addContainerGap(74, Short.MAX_VALUE)
+                .addContainerGap(19, Short.MAX_VALUE)
+                .addComponent(hal_selanjutnya1, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(muncul_nama, javax.swing.GroupLayout.PREFERRED_SIZE, 442, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(hal_selanjutnya, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(18, 18, 18))
+                .addGap(28, 28, 28))
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addGap(168, 168, 168)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -111,13 +124,11 @@ public class nameview extends javax.swing.JFrame {
                     .addComponent(nama_user)
                     .addComponent(enter_nama, javax.swing.GroupLayout.DEFAULT_SIZE, 30, Short.MAX_VALUE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 101, Short.MAX_VALUE)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                        .addComponent(hal_selanjutnya, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(14, 14, 14))
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                        .addComponent(muncul_nama, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(23, 23, 23))))
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(muncul_nama, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(hal_selanjutnya1, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(hal_selanjutnya, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(23, 23, 23))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -171,6 +182,14 @@ public class nameview extends javax.swing.JFrame {
         
     }//GEN-LAST:event_enter_namaActionPerformed
 
+    private void hal_selanjutnya1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_hal_selanjutnya1ActionPerformed
+        // TODO add your handling code here:
+            homeview hv = new homeview();
+            hv.setLocationRelativeTo(null);
+            hv.setVisible(true);
+            this.setVisible(false);
+    }//GEN-LAST:event_hal_selanjutnya1ActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -209,6 +228,7 @@ public class nameview extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton enter_nama;
     private javax.swing.JButton hal_selanjutnya;
+    private javax.swing.JButton hal_selanjutnya1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JTextField muncul_nama;
