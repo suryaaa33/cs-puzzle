@@ -44,10 +44,12 @@ public class opsieasy extends javax.swing.JFrame {
         setBackground(new java.awt.Color(204, 119, 39));
         setMaximumSize(new java.awt.Dimension(587, 344));
         setMinimumSize(new java.awt.Dimension(587, 344));
-        setPreferredSize(new java.awt.Dimension(587, 344));
+        setPreferredSize(new java.awt.Dimension(587, 350));
 
         jPanel1.setBackground(new java.awt.Color(204, 119, 39));
         jPanel1.setBorder(javax.swing.BorderFactory.createMatteBorder(4, 4, 4, 4, new java.awt.Color(102, 102, 0)));
+        jPanel1.setMaximumSize(new java.awt.Dimension(587, 350));
+        jPanel1.setMinimumSize(new java.awt.Dimension(587, 350));
         jPanel1.setPreferredSize(new java.awt.Dimension(588, 344));
 
         jLabel1.setForeground(new java.awt.Color(51, 51, 0));
@@ -132,7 +134,7 @@ public class opsieasy extends javax.swing.JFrame {
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addContainerGap()
                         .addComponent(backbtneasy, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(46, Short.MAX_VALUE))
+                .addContainerGap(45, Short.MAX_VALUE))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -151,18 +153,20 @@ public class opsieasy extends javax.swing.JFrame {
                     .addComponent(tombolkinan))
                 .addGap(10, 10, 10)
                 .addComponent(backbtneasy, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(11, Short.MAX_VALUE))
+                .addContainerGap(27, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, 587, Short.MAX_VALUE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addGroup(layout.createSequentialGroup()
+                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 360, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, Short.MAX_VALUE))
         );
 
         pack();

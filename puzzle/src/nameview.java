@@ -97,9 +97,9 @@ public class nameview extends javax.swing.JFrame {
         jPanel1Layout.setHorizontalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                .addContainerGap(19, Short.MAX_VALUE)
+                .addContainerGap(7, Short.MAX_VALUE)
                 .addComponent(hal_selanjutnya1, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGap(18, 18, 18)
                 .addComponent(muncul_nama, javax.swing.GroupLayout.PREFERRED_SIZE, 442, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(hal_selanjutnya, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -177,7 +177,7 @@ public class nameview extends javax.swing.JFrame {
         if (nama_user.getText().equals("")){
             JOptionPane.showMessageDialog(null, "ISI DONG NAMANYAA!!!", "PUNTEN SLURRR", JOptionPane.ERROR_MESSAGE);
         } else {
-            muncul_nama.setText("H1 " + isi_nama + ", S3m4n64T mainnya guysssssss");
+            muncul_nama.setText("H1 " + isi_nama + ", S3m4n64T mainnya yaaaa ^_^");
         }
         
     }//GEN-LAST:event_enter_namaActionPerformed
