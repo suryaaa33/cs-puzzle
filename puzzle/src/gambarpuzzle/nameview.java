@@ -1,3 +1,5 @@
+package gambarpuzzle;
+
 
 import javax.swing.JOptionPane;
 

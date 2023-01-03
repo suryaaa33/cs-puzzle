@@ -1,7 +1,4 @@
-
-import gambarpuzzle.kinaneasy;
-import gambarpuzzle.marioeasy;
-import gambarpuzzle.radieasy;
+package gambarpuzzle;
 
 /*
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
@@ -42,9 +39,7 @@ public class opsieasy extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setBackground(new java.awt.Color(204, 119, 39));
-        setMaximumSize(new java.awt.Dimension(587, 344));
         setMinimumSize(new java.awt.Dimension(587, 344));
-        setPreferredSize(new java.awt.Dimension(587, 350));
 
         jPanel1.setBackground(new java.awt.Color(204, 119, 39));
         jPanel1.setBorder(javax.swing.BorderFactory.createMatteBorder(4, 4, 4, 4, new java.awt.Color(102, 102, 0)));

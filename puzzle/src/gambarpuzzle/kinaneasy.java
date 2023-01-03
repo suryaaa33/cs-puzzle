@@ -262,8 +262,13 @@ public class kinaneasy extends JFrame{
         }
 
         if (compareList(solution, current)) {
-            JOptionPane.showMessageDialog(panel, "kamu salah satu orang keren yang menyelesaikan game ini!!",
-                    "hj. Slamet", JOptionPane.INFORMATION_MESSAGE);
+              int input = JOptionPane.showConfirmDialog(null, "Kamu salah satu orang keren yang menyelesaikan game ini!! Apakah kamu ingin keluar dari game?", "hj. Slamet", JOptionPane.YES_NO_OPTION);
+              if(input == 0){
+            levelview lv = new levelview();
+            lv.setLocationRelativeTo(null);
+            lv.setVisible(true);
+            this.setVisible(false);
+        }
         }
     }
 

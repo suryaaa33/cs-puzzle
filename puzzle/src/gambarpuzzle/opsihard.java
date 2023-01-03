@@ -1,7 +1,4 @@
-
-import gambarpuzzle.abbashard;
-import gambarpuzzle.elhard;
-import gambarpuzzle.yahyahard;
+package gambarpuzzle;
 
 /*
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license

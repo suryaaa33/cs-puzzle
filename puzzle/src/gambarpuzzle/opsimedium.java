@@ -1,7 +1,4 @@
-
-import gambarpuzzle.basukimedium;
-import gambarpuzzle.nillamedium;
-import gambarpuzzle.suryamedium;
+package gambarpuzzle;
 
 /*
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
