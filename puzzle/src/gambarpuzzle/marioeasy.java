@@ -9,7 +9,6 @@ package gambarpuzzle;
  *
  * @author user
  */
-
 import java.awt.BorderLayout;
 import java.awt.Color;
 import java.awt.EventQueue;
@@ -137,7 +136,7 @@ public class marioeasy extends JFrame{
                     BufferedImage.TYPE_INT_ARGB);
 
         } catch (IOException ex) {
-            Logger.getLogger(marioeasy.class.getName()).log(
+            Logger.getLogger(radieasy.class.getName()).log(
                     Level.SEVERE, null, ex);
         }
 
@@ -212,20 +211,6 @@ public class marioeasy extends JFrame{
         return resizedImage;
     }
 
-    private static class levelview {
-
-        public levelview() {
-        }
-
-        private void setLocationRelativeTo(Object object) {
-            throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
-        }
-
-        private void setVisible(boolean b) {
-            throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
-        }
-    }
-
     private class ClickAction extends AbstractAction {
 
         @Override
@@ -272,7 +257,7 @@ public class marioeasy extends JFrame{
 
         List<Point> current = new ArrayList<>();
 
-         for (JComponent btn : buttons) {
+        for (JComponent btn : buttons) {
             current.add((Point) btn.getClientProperty("position"));
         }
 
@@ -297,10 +282,10 @@ public class marioeasy extends JFrame{
     }
 
     
-   public static void main(String[] args) {
+    public static void main(String[] args) {
 
         EventQueue.invokeLater(() -> {
-            elhard puzzle = new elhard();
+            marioeasy puzzle = new marioeasy();
             puzzle.setVisible(true);
         });
     }
@@ -309,3 +294,4 @@ public class marioeasy extends JFrame{
         return SourceVersion.latest();
     }
 }
+

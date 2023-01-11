@@ -28,30 +28,29 @@ public class homeview extends javax.swing.JFrame {
     private void initComponents() {
 
         jPanel1 = new javax.swing.JPanel();
-        jLabel1 = new javax.swing.JLabel();
-        playbtn = new javax.swing.JButton();
+        jLabel2 = new javax.swing.JLabel();
+        playbtn1 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
         jPanel1.setBackground(new java.awt.Color(204, 119, 39));
         jPanel1.setBorder(javax.swing.BorderFactory.createMatteBorder(4, 4, 4, 4, new java.awt.Color(102, 102, 0)));
         jPanel1.setMaximumSize(new java.awt.Dimension(587, 346));
-        jPanel1.setPreferredSize(new java.awt.Dimension(590, 350));
 
-        jLabel1.setBackground(new java.awt.Color(255, 0, 51));
-        jLabel1.setFont(new java.awt.Font("Comic Sans MS", 1, 36)); // NOI18N
-        jLabel1.setForeground(new java.awt.Color(51, 51, 0));
-        jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel1.setText("CS Puzzle");
-        jLabel1.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED, new java.awt.Color(102, 102, 0), new java.awt.Color(51, 51, 0), null, new java.awt.Color(153, 153, 0)));
+        jLabel2.setBackground(new java.awt.Color(255, 0, 51));
+        jLabel2.setFont(new java.awt.Font("Comic Sans MS", 1, 36)); // NOI18N
+        jLabel2.setForeground(new java.awt.Color(51, 51, 0));
+        jLabel2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel2.setText("CS Puzzle");
+        jLabel2.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED, new java.awt.Color(102, 102, 0), new java.awt.Color(51, 51, 0), null, new java.awt.Color(153, 153, 0)));
 
-        playbtn.setBackground(new java.awt.Color(102, 102, 0));
-        playbtn.setFont(new java.awt.Font("Comic Sans MS", 1, 24)); // NOI18N
-        playbtn.setForeground(new java.awt.Color(255, 255, 255));
-        playbtn.setText("PLAY");
-        playbtn.addActionListener(new java.awt.event.ActionListener() {
+        playbtn1.setBackground(new java.awt.Color(102, 102, 0));
+        playbtn1.setFont(new java.awt.Font("Comic Sans MS", 1, 24)); // NOI18N
+        playbtn1.setForeground(new java.awt.Color(255, 255, 255));
+        playbtn1.setText("PLAY");
+        playbtn1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                playbtnActionPerformed(evt);
+                playbtn1ActionPerformed(evt);
             }
         });
 
@@ -60,46 +59,45 @@ public class homeview extends javax.swing.JFrame {
         jPanel1Layout.setHorizontalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
+                .addGap(162, 162, 162)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 255, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGap(154, 154, 154)
-                        .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 255, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGap(212, 212, 212)
-                        .addComponent(playbtn, javax.swing.GroupLayout.PREFERRED_SIZE, 138, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                        .addGap(58, 58, 58)
+                        .addComponent(playbtn1, javax.swing.GroupLayout.PREFERRED_SIZE, 138, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addContainerGap(162, Short.MAX_VALUE))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
-                .addGap(61, 61, 61)
-                .addComponent(jLabel1)
+                .addGap(78, 78, 78)
+                .addComponent(jLabel2)
                 .addGap(79, 79, 79)
-                .addComponent(playbtn, javax.swing.GroupLayout.PREFERRED_SIZE, 47, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addComponent(playbtn1, javax.swing.GroupLayout.PREFERRED_SIZE, 47, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(79, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, 587, Short.MAX_VALUE)
+            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, 344, Short.MAX_VALUE)
+            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void playbtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_playbtnActionPerformed
+    private void playbtn1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_playbtn1ActionPerformed
         // TODO add your handling code here:
         nameview nv = new nameview();
         nv.setLocationRelativeTo(null);
         nv.setVisible(true);
         this.setVisible(false);
-    }//GEN-LAST:event_playbtnActionPerformed
+    }//GEN-LAST:event_playbtn1ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -135,11 +133,10 @@ public class homeview extends javax.swing.JFrame {
             hv.setVisible(true);
         });
     }
-    
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel2;
     private javax.swing.JPanel jPanel1;
-    private javax.swing.JButton playbtn;
+    private javax.swing.JButton playbtn1;
     // End of variables declaration//GEN-END:variables
 }
