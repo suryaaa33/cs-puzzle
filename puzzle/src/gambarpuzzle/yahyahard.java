@@ -316,13 +316,17 @@ public class yahyahard extends JFrame{
         }
 
         if (compareList(solution, current)) {
-              int input = JOptionPane.showConfirmDialog(null, "Kamu salah satu orang keren yang menyelesaikan game ini!! Apakah kamu ingin keluar dari game?", "hj. Slamet", JOptionPane.YES_NO_OPTION);
+              int input = JOptionPane.showConfirmDialog(null, "Kamu salah satu orang keren yang menyelesaikan game ini!! Apakah kamu ingin bermain lagi?", "hj. Slamet", JOptionPane.YES_NO_OPTION);
+              //0= yes, 1=no, 2=cancel
               if(input == 0){
             levelview lv = new levelview();
             lv.setLocationRelativeTo(null);
             lv.setVisible(true);
             this.setVisible(false);
         }
+              else{
+                  dispose();
+              }
         }
     }
 
